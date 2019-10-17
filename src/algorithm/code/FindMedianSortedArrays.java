@@ -3,7 +3,6 @@
  */
 package algorithm.code;
 
-
 import org.junit.Test;
 
 /**
