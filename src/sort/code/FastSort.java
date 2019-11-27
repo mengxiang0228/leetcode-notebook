@@ -7,8 +7,9 @@ import java.util.Arrays;
 
 /**
    *   快速排序
+   *   最坏运行情况是 O(n²)
  * @author lyx
- * @date 2019年6月12日
+ * @date 2019年6月12日 重写：2019-11-26
  *   https://www.cnblogs.com/redbear/p/8891730.html
  */
 public class FastSort {
