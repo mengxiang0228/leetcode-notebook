@@ -18,6 +18,13 @@
 # 2019-12-23
 完成  1295,1296
 
+# 2020-02-13
+完成 动态规划 54、62
+周测 Q1346
+
+# 2020-02-26
+完成动态规划 Q96、198
+
 # 问题解决
 ## Eclipse import org.junit.Test 和@Test报错
 右击选中的project-》build path-》add libraries-》选中junit，next直到finish
