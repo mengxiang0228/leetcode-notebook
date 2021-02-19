@@ -1,8 +1,8 @@
 package N168;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * 1295. 统计位数为偶数的数字

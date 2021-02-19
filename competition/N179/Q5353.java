@@ -2,12 +2,7 @@ package N179;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.Arrays;
-
 import org.junit.Test;
-
-import sun.security.krb5.KdcComm;
-import sun.tools.jar.resources.jar;
 
 /**
  * 5353. 灯泡开关 III

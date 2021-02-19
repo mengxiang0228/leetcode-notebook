@@ -9,15 +9,15 @@ import java.util.Arrays;
    *   快速排序
    *   最坏运行情况是 O(n²)
  * @author lyx
- * @date 2019年6月12日 重写：2019-11-26
+ * @date 2019年6月12日 重写：2019-11-26 练习:2020-03-31
  *   https://www.cnblogs.com/redbear/p/8891730.html
  */
 public class FastSort {
 
 	public static void main(String[] args) {
 		int[] list = new int[] {6,9,5,7,8,3};
-		fastSort(list,0, list.length-1);
 		System.out.println(Arrays.toString(list));
+		fastSort2(list,0, list.length-1);
 		
 	}
 	
@@ -49,4 +49,35 @@ public class FastSort {
 		}
 
 	}
+	
+	/**
+	 * 2020-03-31练习
+	 * @param a
+	 * @param start
+	 * @param end
+	 */
+	public static void fastSort2(int[] a, int start, int end) {
+		if(start < end) {
+			int temp = a[start];
+			int i = start;
+			int j = end;
+			while (i < j) {
+				while (a[j] >= temp && i< j) {
+					j--;
+				}
+				a[i] = a[j];
+				System.out.println(Arrays.toString(a));
+				while (a[i] <= temp && i < j) {
+					i++;
+				}
+				a[j] = a[i];
+				System.out.println(Arrays.toString(a));
+			}
+			a[i] = temp;
+			System.out.println(Arrays.toString(a));
+			fastSort2(a, start, i-1);
+			fastSort2(a, i+1, end);
+		}
+	}
+	
 }
